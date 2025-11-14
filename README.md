@@ -6,9 +6,14 @@
 
 ## 📘 Overview
 
-This project is a data dashboard that shows public sentiment and trending topics in Indonesia using Twitter data.
-The dashboard is built in **Power BI**, connected directly to a **Supabase PostgreSQL** database using **DirectQuery**.
-All visuals update automatically based on the latest data in the database.
+This project is a **visualization dashboard** for the main repository:
+👉 **[https://github.com/Indonesian-Provincial-Sentiment-Tracker](https://github.com/Indonesian-Provincial-Sentiment-Tracker)**
+
+The main repository handles **data collection, preprocessing, NLP sentiment analysis, topic extraction, and storage** into a Supabase PostgreSQL database.
+
+**This Power BI dashboard is the visualization layer**, used to explore, analyze, and interpret the processed data interactively.
+
+The dashboard is connected using **DirectQuery**, allowing it to show **real-time insights** from the database.
 
 The dashboard shows:
 
@@ -20,14 +25,19 @@ The dashboard shows:
 
 ---
 
+## 📸 Preview Dashboard
+![Indonesia State Sentiment Dashboard](preview.png)
+
+---
+
 ## 🛠️ Technology Used
 
-| Purpose            | Tools                                        |
-| ------------------ | -------------------------------------------- |
-| Database           | Supabase PostgreSQL                          |
-| BI & Visualization | Power BI (DirectQuery)                       |
-| Data Source        | Twitter                                      |
-| Visuals            | KPI Card, Map, Donut, Bar Chart, Line Chart  |
+| Purpose            | Tools                                       |
+| ------------------ | ------------------------------------------- |
+| Database           | Supabase PostgreSQL                         |
+| BI & Visualization | Power BI (DirectQuery)                      |
+| Data Source        | Twitter                                     |
+| Visuals            | KPI Card, Map, Donut, Bar Chart, Line Chart |
 
 ---
 
@@ -39,14 +49,16 @@ The dashboard shows:
 * State-level sentiment
 * Daily/Weekly/Monthly averages
 * Trend lines
-* Top Positive & Negative states
+* Top positive & negative states
 
 ### ✔ Topic Analysis
 
 * Frequent topics
-* Topic counts per state
+* Topic counts per province
 
 ### ✔ Interactive Visuals
 
 * Map filter (click province to filter all visuals)
-* Date slicer (daily/weekly/monthly)
+* Date slicer (daily / weekly / monthly)
+
+
